@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { BsCart3 } from 'react-icons/bs';
+import { FaRegEnvelopeOpen } from 'react-icons/fa';
+import { FiBox } from 'react-icons/fi';
+import { IoIosStarOutline, IoMdAddCircleOutline } from 'react-icons/io';
+import { RiMenuFoldLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
-// import logo from '../assets/logos/logo.png';
-// import menu from '../assets/icons/indent-decrease.png';
+import './Navbar.scss';
 
 const Navbar = () => {
   const [activeItem, setActiveitem] = useState('Dashboard');
@@ -14,11 +18,12 @@ const Navbar = () => {
     <>
       <div className='jobins-logo-section'>
         <div className='jobins-title'>
-          {/* <img src={logo} alt='jobins-logo' /> */}
+          <img src='/assets/logo/logo.png' alt='jobins-logo' />
+
           <h4>JoBins</h4>
         </div>
         <div className='minimize-menu'>
-          {/* <img src={menu} alt='inc-dec-menu' /> */}
+          <RiMenuFoldLine size={20} color='#8b909a' />
         </div>
       </div>
 
@@ -35,8 +40,7 @@ const Navbar = () => {
                 onClick={() => handleMenuItemClick('Dashboard')}
               >
                 <Link to='/'>
-                  {/* <FontAwesomeIcon icon={faEnvelopeOpen} /> */}
-                  Dashboard
+                  <FaRegEnvelopeOpen size={16} /> <span>Dashboard</span>
                 </Link>
               </li>
 
@@ -44,14 +48,20 @@ const Navbar = () => {
                 className={activeItem === 'Order Management' ? 'active' : ''}
                 onClick={() => handleMenuItemClick('Order Management')}
               >
-                <Link to='/order-management'>Order Management</Link>
+                <Link to='/order-management'>
+                  <BsCart3 size={18} />
+                  <span>Order Management</span>
+                </Link>
               </li>
 
               <li
                 className={activeItem === 'Brand' ? 'active' : ''}
                 onClick={() => handleMenuItemClick('Brand')}
               >
-                <Link to='/brand'>Brand</Link>
+                <Link to='/brand'>
+                  <IoIosStarOutline size={20} />
+                  <span>Brand</span>
+                </Link>
               </li>
             </ul>
           </div>
@@ -66,13 +76,19 @@ const Navbar = () => {
                 className={activeItem === 'Add Products' ? 'active' : ''}
                 onClick={() => handleMenuItemClick('Add Products')}
               >
-                <Link to='/order-management'>Add Products</Link>
+                <Link to='/order-management'>
+                  <IoMdAddCircleOutline size={20} />
+                  <span>Add Products</span>
+                </Link>
               </li>
               <li
                 className={activeItem === 'Product List' ? 'active' : ''}
                 onClick={() => handleMenuItemClick('Product List')}
               >
-                <Link to='/brand'>Product List</Link>
+                <Link to='/brand'>
+                  <FiBox size={18} />
+                  <span>Product List</span>
+                </Link>
               </li>
             </ul>
           </div>
