@@ -90,34 +90,103 @@ $content-back: #f5f5f5;
     .right-content-section {
       width: 85%;
       background: $content-back;
-
-      .error-message-content {
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-        }
-      }
     }
   }
 }
 
+// --------------------------<Error404/> Component------------------------
+
+.error-message-content {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #fdf9f9;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
 // --------------------------<Dashboard/> Component------------------------
+
+select {
+  padding: 10px 15px;
+  color: $text-heading;
+  font-size: 15px;
+  border-radius: 6px;
+  background: #fff;
+  border: none;
+  outline: none;
+  letter-spacing: 1.43px;
+  font-weight: 500;
+}
 
 .dashboard-section {
   .inner {
     padding: 10px 30px;
 
     .header-container {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     .sales-costs-container {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .shipping-container {
+      margin-bottom: 30px;
+    }
+
+    .filter-container {
+      .filter-items-section {
+        .filter-item-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .filter-item {
+            &:nth-of-type(1) {
+              .subfilter-item-wrapper {
+                display: flex;
+                align-items: center;
+                .subfilter-item {
+                  &:nth-of-type(2) {
+                    padding-left: 20px;
+
+                    .group {
+                      position: relative;
+                      display: flex;
+                      align-items: center;
+
+                      .input {
+                        padding: 10px 15px;
+                        border: 0;
+                        border-radius: 6px;
+                        background: #fff;
+                        color: $text-heading;
+                        outline: none;
+                        font-size: 15px;
+                        letter-spacing: 1.43px;
+                        z-index: 0;
+                      }
+
+                      .search-icon {
+                        position: absolute;
+                        right: 12%;
+                        color: $text-heading;
+                        pointer-events: none;
+                        z-index: 1;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

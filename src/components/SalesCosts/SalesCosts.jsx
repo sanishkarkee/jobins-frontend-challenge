@@ -71,7 +71,7 @@ const SalesCosts = () => {
                     <p>United States</p>
                   </div>
                   <div className='progress-bar'>
-                    <progress id='file' value='25' max='100'></progress>
+                    <progress id='file' value='50' max='100'></progress>
                   </div>
                   <div className='inc-dec'>
                     <p>
@@ -90,7 +90,7 @@ const SalesCosts = () => {
                     <p>Brazil</p>
                   </div>
                   <div className='progress-bar'>
-                    <progress id='file' value='16' max='100'></progress>
+                    <progress id='file' value='35' max='100'></progress>
                   </div>
                   <div className='inc-dec'>
                     <p>
@@ -109,7 +109,7 @@ const SalesCosts = () => {
                     <p>Australia</p>
                   </div>
                   <div className='progress-bar'>
-                    <progress id='file' value='17' max='100'></progress>
+                    <progress id='file' value='10' max='100'></progress>
                   </div>
                   <div className='inc-dec'>
                     <p>
