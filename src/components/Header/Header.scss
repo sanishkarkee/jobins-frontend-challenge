@@ -1,0 +1,42 @@
+// -------------colors-------------
+$bell-outline: #4b465c;
+$red: #ea5455;
+
+.header-section {
+  background: rgb(255, 203, 255);
+
+  .header-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .profile-details {
+      display: flex;
+      align-items: center;
+
+      .notification-info {
+        position: relative;
+        svg {
+          color: $bell-outline;
+        }
+        &::after {
+          content: '4';
+          color: #fff;
+          width: 10px;
+          height: 12px;
+          font-size: 12px;
+          position: absolute;
+          top: -6px;
+          right: -5px;
+          background: $red;
+          padding: 4px;
+          border-radius: 50%;
+        }
+      }
+
+      .profile-info {
+        padding-left: 25px;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Dashboard from '../components/Dashboard/Dashboard';
 import Error404 from '../pages/Error404';
+import Dashboard from '../pages/Dashboard';
 
 const AppRoutes = () => {
   return (

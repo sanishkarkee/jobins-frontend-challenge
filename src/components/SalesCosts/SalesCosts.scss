@@ -1,0 +1,161 @@
+// -------------colors-------------
+$blue: #0f60ff;
+$text-heading: #8b909a;
+$black: #23272e;
+$green: #28c76f;
+$red: #ea5455;
+$border-line: #dbdade;
+
+// -------------mixins-------------
+@mixin background-radius {
+  background: #fff;
+  border-radius: 16px;
+}
+
+p {
+  color: $text-heading;
+}
+
+h6 {
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+.sales-costs-section {
+  .sales-costs-wrapper {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+
+    .total-sales-costs-block {
+      @include background-radius;
+
+      .inner {
+        padding: 25px;
+
+        .sales-wrapper {
+          display: flex;
+          align-items: center;
+
+          .sales-img {
+            padding: 35px;
+            border-right: 1px solid $border-line;
+          }
+
+          .sales-info {
+            padding-inline: 35px;
+
+            .title {
+              padding-bottom: 30px;
+
+              p {
+                padding-top: 5px;
+              }
+            }
+
+            .price {
+              h3 {
+                padding-bottom: 15px;
+              }
+
+              p {
+                span {
+                  font-weight: 600;
+                  color: $green;
+                  padding: 0 10px 0 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .total-profit-block {
+      @include background-radius;
+      padding-inline: 15px;
+
+      .inner {
+        padding: 25px;
+
+        .total-profit-title {
+          display: flex;
+          align-items: center;
+
+          .profit-title {
+            padding-left: 25px;
+          }
+        }
+
+        .profit-amount {
+          padding-top: 40px;
+
+          h3 {
+            padding-bottom: 15px;
+          }
+
+          p {
+            span {
+              font-weight: 600;
+              color: $green;
+              padding: 0 10px 0 0px;
+            }
+          }
+        }
+      }
+    }
+
+    .progress-percentage-block {
+      @include background-radius;
+
+      .inner {
+        padding: 25px;
+
+        .country-progress-wrapper {
+          display: flex;
+          flex-direction: column;
+
+          .country-item {
+            display: flex;
+            align-items: center;
+
+            .country-img {
+              padding-right: 15px;
+            }
+
+            .country-name {
+              padding-right: 15px;
+
+              h6 {
+                font-size: 15px !important;
+              }
+            }
+
+            .progress-bar {
+              padding-right: 15px;
+            }
+
+            .inc-dec {
+              p {
+                display: flex;
+                align-items: center;
+                color: $green;
+              }
+            }
+            &:nth-of-type(1) {
+              .inc-dec {
+                p {
+                  color: $red;
+                }
+              }
+            }
+
+            &:not(:last-of-type) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

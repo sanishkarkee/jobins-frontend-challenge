@@ -46,7 +46,9 @@ h6 {
 }
 
 p {
+  font-size: 13px;
   margin-bottom: 18px;
+  margin-top: 0;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -104,4 +106,18 @@ $content-back: #f5f5f5;
   }
 }
 
-// --------------------------<Error404/> Component------------------------
+// --------------------------<Dashboard/> Component------------------------
+
+.dashboard-section {
+  .inner {
+    padding: 10px 30px;
+
+    .header-container {
+      margin-bottom: 10px;
+    }
+
+    .sales-costs-container {
+      margin-bottom: 20px;
+    }
+  }
+}

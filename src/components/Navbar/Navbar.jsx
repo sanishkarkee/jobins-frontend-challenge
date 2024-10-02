@@ -76,7 +76,7 @@ const Navbar = () => {
                 className={activeItem === 'Add Products' ? 'active' : ''}
                 onClick={() => handleMenuItemClick('Add Products')}
               >
-                <Link to='/order-management'>
+                <Link to='/add-products'>
                   <IoMdAddCircleOutline size={20} />
                   <span>Add Products</span>
                 </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
                 className={activeItem === 'Product List' ? 'active' : ''}
                 onClick={() => handleMenuItemClick('Product List')}
               >
-                <Link to='/brand'>
+                <Link to='/product-list'>
                   <FiBox size={18} />
                   <span>Product List</span>
                 </Link>
