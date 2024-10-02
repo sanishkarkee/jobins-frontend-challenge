@@ -71,7 +71,7 @@ const SalesCosts = () => {
                     <p>United States</p>
                   </div>
                   <div className='progress-bar'>
-                    <progress id='file' value='32' max='100'></progress>
+                    <progress id='file' value='25' max='100'></progress>
                   </div>
                   <div className='inc-dec'>
                     <p>
@@ -83,38 +83,38 @@ const SalesCosts = () => {
 
                 <div className='country-item'>
                   <div className='country-img'>
-                    <img src='/assets/salescosts/usa.png' alt='' />
+                    <img src='/assets/salescosts/brazil.png' alt='' />
                   </div>
                   <div className='country-name'>
-                    <h6>30k</h6>
-                    <p>United States</p>
+                    <h6>26k</h6>
+                    <p>Brazil</p>
                   </div>
                   <div className='progress-bar'>
-                    <progress id='file' value='32' max='100'></progress>
+                    <progress id='file' value='16' max='100'></progress>
                   </div>
                   <div className='inc-dec'>
                     <p>
                       <RiArrowUpSLine size={25} />
-                      25.8%
+                      16.2
                     </p>
                   </div>
                 </div>
 
                 <div className='country-item'>
                   <div className='country-img'>
-                    <img src='/assets/salescosts/usa.png' alt='' />
+                    <img src='/assets/salescosts/australia.png' alt='' />
                   </div>
                   <div className='country-name'>
-                    <h6>30k</h6>
-                    <p>United States</p>
+                    <h6>17k</h6>
+                    <p>Australia</p>
                   </div>
                   <div className='progress-bar'>
-                    <progress id='file' value='32' max='100'></progress>
+                    <progress id='file' value='17' max='100'></progress>
                   </div>
                   <div className='inc-dec'>
                     <p>
                       <RiArrowUpSLine size={25} />
-                      25.8%
+                      11.9%
                     </p>
                   </div>
                 </div>

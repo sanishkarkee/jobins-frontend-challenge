@@ -25,10 +25,12 @@ h6 {
   .sales-costs-wrapper {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
+    gap: 3%;
 
     .total-sales-costs-block {
       @include background-radius;
+
+      width: 32%;
 
       .inner {
         padding: 25px;
@@ -74,6 +76,7 @@ h6 {
     .total-profit-block {
       @include background-radius;
       padding-inline: 15px;
+      width: 20%;
 
       .inner {
         padding: 25px;
@@ -88,7 +91,7 @@ h6 {
         }
 
         .profit-amount {
-          padding-top: 40px;
+          padding-top: 32px;
 
           h3 {
             padding-bottom: 15px;
@@ -107,6 +110,7 @@ h6 {
 
     .progress-percentage-block {
       @include background-radius;
+      width: 40%;
 
       .inner {
         padding: 25px;
@@ -121,10 +125,13 @@ h6 {
 
             .country-img {
               padding-right: 15px;
+              min-width: 40px;
             }
 
             .country-name {
+              flex: 1;
               padding-right: 15px;
+              min-width: 100px;
 
               h6 {
                 font-size: 15px !important;
@@ -132,16 +139,25 @@ h6 {
             }
 
             .progress-bar {
+              flex: 3;
               padding-right: 15px;
+
+              progress {
+                width: 100%;
+              }
             }
 
             .inc-dec {
+              min-width: 70px;
+              text-align: right;
+
               p {
                 display: flex;
                 align-items: center;
                 color: $green;
               }
             }
+
             &:nth-of-type(1) {
               .inc-dec {
                 p {
