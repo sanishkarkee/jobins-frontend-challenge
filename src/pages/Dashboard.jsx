@@ -35,10 +35,10 @@ const Dashboard = () => {
                       </select>
                     </div>
                     <div className='subfilter-item'>
-                      <div class='group'>
+                      <div className='group'>
                         <input
                           id='query'
-                          class='input'
+                          className='input'
                           type='search'
                           placeholder='Search...'
                           name='searchbar'

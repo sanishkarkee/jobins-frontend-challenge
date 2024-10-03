@@ -1,3 +1,50 @@
-h1 {
-  background: green;
+// -------------colors-------------
+$text-heading: #8b909a;
+$table-border: #e9e7fd;
+$black: #23272e;
+
+@mixin background-radius {
+  background: #fff;
+  border-radius: 16px;
+}
+
+.table-section {
+  @include background-radius;
+
+  table {
+    width: 100%;
+
+    thead {
+      tr {
+        border-bottom: 1px solid $table-border;
+        th {
+          font-size: 14px;
+          font-weight: 500;
+          padding: 15px 20px;
+          color: $text-heading;
+          text-align: left;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          font-size: 15px;
+          font-weight: 500;
+          color: $black;
+          padding: 15px 20px;
+          border-top: 1px solid $table-border;
+        }
+      }
+    }
+  }
+
+  .table-operation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-top: 1px solid $table-border;
+  }
 }
