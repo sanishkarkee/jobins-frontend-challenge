@@ -5,13 +5,7 @@ const Error404 = () => {
   return (
     <>
       <div className='error-message-content'>
-        <div className='inner'>
-          <Header />
-
-          <div className='img-wrapper'>
-            <img src='/assets/error/error.png' alt='' />
-          </div>
-        </div>
+        <img src='/assets/error/error.png' alt='' />
       </div>
     </>
   );
