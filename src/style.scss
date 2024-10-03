@@ -97,15 +97,25 @@ $content-back: #f5f5f5;
 // --------------------------<Error404/> Component------------------------
 
 .error-message-content {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background: #fdf9f9;
+  // width: 100%;
+  // height: 100vh;
+  // overflow: hidden;
+  // background: #fdf9f9;
+  .inner {
+    padding: 10px 30px;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    .img-wrapper {
+      width: 100%;
+      height: 90vh;
+      overflow: hidden;
+      background: #fdf9f9;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
   }
 }
 
@@ -140,6 +150,8 @@ select {
     }
 
     .filter-container {
+      margin-bottom: 30px;
+
       .filter-items-section {
         .filter-item-wrapper {
           display: flex;

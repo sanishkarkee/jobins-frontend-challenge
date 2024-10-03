@@ -8,6 +8,18 @@ $grey: #f3f4f8;
 $text-heading: #8b909a;
 $content-back: #f5f5f5;
 
+// -------------GLOBAL declarations-------------
+.section-title {
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    color: $text-heading;
+
+    padding: 15px 20px;
+    margin-top: 0;
+  }
+}
+
 .jobins-logo-section {
   display: flex;
   justify-content: space-between;
@@ -34,17 +46,6 @@ $content-back: #f5f5f5;
 
 .navbar-section {
   .navbar {
-    .section-title {
-      p {
-        font-size: 12px;
-        font-weight: 400;
-        color: $text-heading;
-
-        padding: 15px 20px;
-        margin-top: 0;
-      }
-    }
-
     ul {
       li {
         padding: 15px 20px;
@@ -80,18 +81,6 @@ $content-back: #f5f5f5;
 
     .main-menu-section {
       padding-bottom: 20px;
-      // ul {
-      //   li {
-      //     &:nth-of-type(1) {
-      //       background: $grey;
-      //       font-weight: 600;
-
-      //       a {
-      //         color: $black;
-      //       }
-      //     }
-      //   }
-      // }
     }
   }
 }

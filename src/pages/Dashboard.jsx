@@ -3,6 +3,7 @@ import Header from '../components/Header/Header';
 import SalesCosts from '../components/SalesCosts/SalesCosts';
 import Shipping from '../components/Shipping/Shipping';
 import { IoSearchOutline } from 'react-icons/io5';
+import DataTable from '../components/DataTable/DataTable';
 
 const Dashboard = () => {
   return (
@@ -58,6 +59,10 @@ const Dashboard = () => {
                 </div>
               </div>
             </section>
+          </div>
+
+          <div className='data-table-container'>
+            <DataTable />
           </div>
         </div>
       </section>
