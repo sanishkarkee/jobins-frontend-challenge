@@ -1,14 +1,20 @@
 import React from 'react';
 import './Header.scss';
 import { GoBell } from 'react-icons/go';
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const location = useLocation();
+  const currentPath =
+    location.pathname === '/'
+      ? 'Dashboard'
+      : location.pathname.replace('/', '');
   return (
     <>
       <div className='header-section'>
         <div className='header-content-wrapper'>
           <div className='header-title'>
-            <h4>Dashboard</h4>
+            <h4>{currentPath}</h4>
           </div>
 
           <div className='profile-details'>

@@ -48,7 +48,7 @@ const Navbar = () => {
                 className={activeItem === 'Order Management' ? 'active' : ''}
                 onClick={() => handleMenuItemClick('Order Management')}
               >
-                <Link to='/order-management'>
+                <Link to='/Order-Management'>
                   <BsCart3 size={18} />
                   <span>Order Management</span>
                 </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 className={activeItem === 'Brand' ? 'active' : ''}
                 onClick={() => handleMenuItemClick('Brand')}
               >
-                <Link to='/brand'>
+                <Link to='/Brand'>
                   <IoIosStarOutline size={20} />
                   <span>Brand</span>
                 </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 className={activeItem === 'Add Products' ? 'active' : ''}
                 onClick={() => handleMenuItemClick('Add Products')}
               >
-                <Link to='/add-products'>
+                <Link to='/Add-Products'>
                   <IoMdAddCircleOutline size={20} />
                   <span>Add Products</span>
                 </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
                 className={activeItem === 'Product List' ? 'active' : ''}
                 onClick={() => handleMenuItemClick('Product List')}
               >
-                <Link to='/product-list'>
+                <Link to='/Product-List'>
                   <FiBox size={18} />
                   <span>Product List</span>
                 </Link>

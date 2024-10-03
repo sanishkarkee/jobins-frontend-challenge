@@ -7,8 +7,8 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path='/' element={<Dashboard />} />
-      <Route path='/order-management' element={<Error404 />} />
-      <Route path='/brand' element={<Error404 />} />
+      <Route path='/Order-Management' element={<Error404 />} />
+      <Route path='/Brand' element={<Error404 />} />
       <Route path='*' element={<Error404 />} />
     </Routes>
   );
