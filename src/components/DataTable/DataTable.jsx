@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './DataTable.scss';
+import { MdChevronRight, MdKeyboardArrowLeft } from 'react-icons/md';
 
 const DataTable = () => {
   const [data, setData] = useState([]);
@@ -10,7 +11,7 @@ const DataTable = () => {
         const response = await fetch('https://fakestoreapi.com/carts');
         const formattedResult = await response.json();
 
-        //-- Changes made to received data from API inorder to match with FIGMA design
+        //-- Changes made to API data's inorder to match with FIGMA design
         const customData = formattedResult.map((cart, index) => ({
           id: `#000` + cart.id,
           customer: `Joseph Wheeler ${cart.userId}`,
@@ -68,7 +69,10 @@ const DataTable = () => {
                   >
                     {item.status}
                   </td>
-                  <td style={{ color: '#0f60ff', cursor: 'pointer' }}>
+                  <td
+                    style={{ color: '#0f60ff', cursor: 'pointer' }}
+                    title='Edit - Delete'
+                  >
                     {item.action}
                   </td>
                 </tr>
@@ -78,8 +82,35 @@ const DataTable = () => {
         </table>
 
         <div className='table-operation'>
-          <div className='showing-block'>this is cool</div>
-          <div className='pagination-block'>Isn't it?</div>
+          <div className='showing-block'>
+            <p>Showing</p>
+
+            <select name='data-number' id='data-number'>
+              <option value='10'>10</option>
+              <option value='20'>20</option>
+              <option value='30'>30</option>
+              <option value='40'>40</option>
+            </select>
+
+            <p>of 50</p>
+          </div>
+
+          <div className='pagination-block'>
+            <div className='pagination'>
+              <p>
+                <MdKeyboardArrowLeft />
+              </p>
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+              <p>5</p>
+              <p>6</p>
+              <p>
+                <MdChevronRight />
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </>

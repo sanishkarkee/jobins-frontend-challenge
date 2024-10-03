@@ -2,6 +2,7 @@
 $text-heading: #8b909a;
 $table-border: #e9e7fd;
 $black: #23272e;
+$blue: #0f60ff;
 
 @mixin background-radius {
   background: #fff;
@@ -46,5 +47,54 @@ $black: #23272e;
     align-items: center;
     padding: 15px 25px;
     border-top: 1px solid $table-border;
+
+    .showing-block {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 15px;
+        margin-bottom: 0;
+
+        &:nth-of-type(1) {
+          padding-right: 10px;
+        }
+        &:nth-of-type(2) {
+          padding-left: 10px;
+        }
+      }
+
+      select {
+        padding: 10px 20px;
+        border: 1px solid $text-heading;
+      }
+    }
+  }
+
+  .pagination-block {
+    .pagination {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 13px;
+        color: $text-heading;
+        border-radius: 4px;
+        margin-bottom: 0;
+        padding: 5px 10px;
+        text-decoration: none;
+        background: #f1f2f6;
+        cursor: pointer;
+
+        &:nth-of-type(2) {
+          background: $blue;
+          color: #fff;
+        }
+
+        &:not(:last-of-type) {
+          margin-right: 5px;
+        }
+      }
+    }
   }
 }
