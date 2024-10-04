@@ -323,9 +323,20 @@ select {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        padding: 10px 15px;
 
         .jobins-logo-section {
           margin-right: 10px;
+
+          .jobins-title {
+            img {
+              padding-right: 15px;
+            }
+
+            h4 {
+              font-size: 18px;
+            }
+          }
 
           .minimize-menu {
             display: none;
@@ -338,7 +349,7 @@ select {
             align-items: center;
 
             .main-menu-section {
-              padding-bottom: 10px;
+              padding-bottom: 0px;
               padding-right: 5px;
 
               ul {
@@ -356,7 +367,7 @@ select {
             }
 
             .product-section {
-              padding-bottom: 10px;
+              padding-bottom: 0px;
 
               ul {
                 display: flex;
@@ -383,7 +394,7 @@ select {
 
   .dashboard-section {
     .inner {
-      padding: 9px 12px;
+      padding: 15px;
 
       .filter-container {
         .filter-items-section {
