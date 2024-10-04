@@ -140,3 +140,68 @@ h6 {
     }
   }
 }
+
+// -----------------------RESPONSIVE------------------------
+@media all and (max-width: 1399px) {
+  .shipping-info-section {
+    .shipping-inner {
+      padding: 20px 30px 0px;
+
+      .nav-tabs-block {
+        .nav-tabs-block-wrapper {
+          .nav-tabs-block-item {
+            p {
+              padding: 10px 20px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .shipping-info-block {
+        .info-content-wrapper {
+          .info-content-item {
+            &:nth-of-type(1) {
+              .user-details {
+                h6 {
+                  font-size: 17px !important;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+
+            &:nth-of-type(2) {
+              padding: 0px 25px 25px 25px;
+
+              .info-title {
+                padding-bottom: 20px;
+              }
+            }
+
+            &:nth-of-type(3) {
+              padding: 0px 25px 25px 25px;
+
+              .total-order-wrapper {
+                .order-item {
+                  h4 {
+                    font-size: 22px;
+                  }
+
+                  &:nth-of-type(2) {
+                    padding-inline: 50px;
+                  }
+                }
+              }
+
+              .shipping-title {
+                padding-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

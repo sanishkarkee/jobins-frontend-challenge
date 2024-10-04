@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { BsCart3 } from 'react-icons/bs';
 import { FaRegEnvelopeOpen } from 'react-icons/fa';
-import { FiBox } from 'react-icons/fi';
+import { FiBox, FiStar } from 'react-icons/fi';
 import { IoIosStarOutline, IoMdAddCircleOutline } from 'react-icons/io';
 import { RiMenuFoldLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
+import { VscMailRead } from 'react-icons/vsc';
 
 const Navbar = () => {
   const [activeItem, setActiveitem] = useState('Dashboard');
@@ -23,7 +24,7 @@ const Navbar = () => {
           <h4>JoBins</h4>
         </div>
         <div className='minimize-menu'>
-          <RiMenuFoldLine size={20} color='#8b909a' />
+          <RiMenuFoldLine color='#8b909a' />
         </div>
       </div>
 
@@ -40,7 +41,8 @@ const Navbar = () => {
                 onClick={() => handleMenuItemClick('Dashboard')}
               >
                 <Link to='/'>
-                  <FaRegEnvelopeOpen size={16} /> <span>Dashboard</span>
+                  <VscMailRead />
+                  <span>Dashboard</span>
                 </Link>
               </li>
 
@@ -49,7 +51,7 @@ const Navbar = () => {
                 onClick={() => handleMenuItemClick('Order Management')}
               >
                 <Link to='/Order-Management'>
-                  <BsCart3 size={18} />
+                  <BsCart3 />
                   <span>Order Management</span>
                 </Link>
               </li>
@@ -59,7 +61,7 @@ const Navbar = () => {
                 onClick={() => handleMenuItemClick('Brand')}
               >
                 <Link to='/Brand'>
-                  <IoIosStarOutline size={20} />
+                  <FiStar />
                   <span>Brand</span>
                 </Link>
               </li>
@@ -77,7 +79,7 @@ const Navbar = () => {
                 onClick={() => handleMenuItemClick('Add Products')}
               >
                 <Link to='/Add-Products'>
-                  <IoMdAddCircleOutline size={20} />
+                  <IoMdAddCircleOutline />
                   <span>Add Products</span>
                 </Link>
               </li>
@@ -86,7 +88,7 @@ const Navbar = () => {
                 onClick={() => handleMenuItemClick('Product List')}
               >
                 <Link to='/Product-List'>
-                  <FiBox size={18} />
+                  <FiBox />
                   <span>Product List</span>
                 </Link>
               </li>

@@ -1,9 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import './DataTable.scss';
 import { MdChevronRight, MdKeyboardArrowLeft } from 'react-icons/md';
+import ReactPaginate from 'react-paginate';
 
 const DataTable = () => {
   const [data, setData] = useState([]);
+
+  const [currentPage, setCurrentPage] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(10);
+
+  // Calculate the data for the current page
+  const startIndex = currentPage * itemsPerPage;
+  const currentData = data.slice(startIndex, startIndex + itemsPerPage);
+
+  // Handle page click
+  const handlePageClick = (event) => {
+    setCurrentPage(event.selected);
+    //fetch next page data of api
+  };
+
+  const handleNoOfShowing = (event) => {
+    console.log(event.target.value);
+    setItemsPerPage(event.target.value);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -85,32 +104,38 @@ const DataTable = () => {
           <div className='showing-block'>
             <p>Showing</p>
 
-            <select name='data-number' id='data-number'>
+            <select
+              name='data-number'
+              id='data-number'
+              onChange={handleNoOfShowing}
+            >
               <option value='10'>10</option>
               <option value='20'>20</option>
               <option value='30'>30</option>
               <option value='40'>40</option>
+              <option value='50'>50</option>
             </select>
 
             <p>of 50</p>
           </div>
 
-          <div className='pagination-block'>
-            <div className='pagination'>
-              <p>
-                <MdKeyboardArrowLeft />
-              </p>
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
-              <p>4</p>
-              <p>5</p>
-              <p>6</p>
-              <p>
-                <MdChevronRight />
-              </p>
-            </div>
-          </div>
+          <ReactPaginate
+            previousLabel={<MdKeyboardArrowLeft />}
+            nextLabel={<MdChevronRight />}
+            pageCount={Math.ceil(50 / itemsPerPage)}
+            onPageChange={handlePageClick}
+            containerClassName={'pagination'}
+            pageClassName={'page-item'}
+            pageLinkClassName={'page-link'}
+            previousClassName={'page-item'}
+            previousLinkClassName={'page-link'}
+            nextClassName={'page-item'}
+            nextLinkClassName={'page-link'}
+            breakLabel={'...'}
+            breakClassName={'page-item'}
+            breakLinkClassName={'page-link'}
+            activeClassName={'active'}
+          />
         </div>
       </section>
     </>

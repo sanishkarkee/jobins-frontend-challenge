@@ -19,7 +19,7 @@ const Header = () => {
 
           <div className='profile-details'>
             <div className='notification-info'>
-              <GoBell size={25} />
+              <GoBell />
             </div>
             <div className='profile-info'>
               <img src='/assets/profile/Avatar.png' alt='' />

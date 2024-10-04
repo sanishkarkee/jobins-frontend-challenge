@@ -98,3 +98,82 @@ $blue: #0f60ff;
     }
   }
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.page-item {
+  margin: 0 1px;
+}
+
+.page-link {
+  font-size: 13px;
+  color: $text-heading;
+  border-radius: 4px;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  text-decoration: none;
+  background: #f1f2f6;
+  cursor: pointer;
+}
+
+.page-link:hover {
+  background-color: #f4f4f4;
+}
+
+.page-item.active .page-link {
+  background-color: $blue;
+  color: white;
+  border: 1px solid $blue;
+}
+
+.page-link:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.showing {
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+}
+
+// -----------------------RESPONSIVE------------------------
+@media all and (max-width: 1600px) {
+  .table-section {
+    table {
+      thead {
+        tr {
+          th {
+            padding: 13px 16px;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            padding: 13px 16px;
+          }
+        }
+      }
+    }
+
+    .table-operation {
+      padding: 13px 22px;
+
+      .showing-block {
+        select {
+          padding: 8px 16px;
+        }
+      }
+    }
+  }
+}

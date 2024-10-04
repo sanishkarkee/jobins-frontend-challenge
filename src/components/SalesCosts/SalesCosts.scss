@@ -174,3 +174,210 @@ h6 {
     }
   }
 }
+
+// -----------------------RESPONSIVE------------------------
+@media all and (max-width: 1600px) {
+  .sales-costs-section {
+    .sales-costs-wrapper {
+      gap: 2%;
+
+      .total-sales-costs-block {
+        .inner {
+          padding: 25px 20px;
+
+          .sales-wrapper {
+            .sales-img {
+              padding: 20px;
+            }
+
+            .sales-info {
+              padding-inline: 20px;
+
+              .price {
+                h3 {
+                  font-size: 28px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .total-profit-block {
+        .inner {
+          padding: 25px 20px;
+
+          .profit-amount {
+            padding-top: 22px;
+
+            h3 {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+
+      .progress-percentage-block {
+        .inner {
+          padding: 25px 20px;
+          .country-progress-wrapper {
+            .country-item {
+              &:not(:last-of-type) {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1399px) {
+  .sales-costs-section {
+    .sales-costs-wrapper {
+      gap: 2%;
+
+      .total-sales-costs-block {
+        .inner {
+          padding: 20px 15px;
+
+          .sales-wrapper {
+            .sales-info {
+              .title {
+                h6 {
+                  font-size: 17px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .total-profit-block {
+        .inner {
+          padding: 20px 15px;
+        }
+      }
+
+      .progress-percentage-block {
+        .inner {
+          padding: 20px 15px;
+
+          .country-progress-wrapper {
+            .country-item {
+              .country-img {
+                padding-right: 10px;
+                min-width: 30px;
+              }
+
+              .country-name {
+                padding-right: 10px;
+                min-width: 90px;
+              }
+
+              .progress-bar {
+                padding-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .sales-costs-section {
+    .sales-costs-wrapper {
+      .total-sales-costs-block {
+        .inner {
+          padding: 13px 10px;
+
+          .sales-wrapper {
+            .sales-img {
+              padding: 15px;
+
+              img {
+                width: 65px;
+                aspect-ratio: 1/1;
+              }
+            }
+
+            .sales-info {
+              padding-inline: 15px;
+
+              .title {
+                padding-bottom: 18px;
+
+                h6 {
+                  font-size: 15px !important;
+                }
+              }
+
+              .price {
+                h3 {
+                  font-size: 23px;
+                  padding-bottom: 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .total-profit-block {
+        padding-inline: 10px;
+
+        .inner {
+          padding: 15px 10px;
+
+          .total-profit-title {
+            .profit-title {
+              h6 {
+                font-size: 15px !important;
+              }
+            }
+          }
+
+          .profit-amount {
+            h3 {
+              font-size: 23px;
+            }
+          }
+        }
+      }
+
+      .progress-percentage-block {
+        .inner {
+          padding: 15px 10px;
+
+          .country-progress-wrapper {
+            .country-item {
+              .country-img {
+                padding-right: 8px;
+                min-width: 30px;
+
+                img {
+                  width: 30px;
+                  aspect-ratio: 1/1;
+                }
+              }
+
+              .country-name {
+                padding-right: 8px;
+                h6 {
+                  font-size: 14px !important;
+                }
+              }
+
+              .progress-bar {
+                padding-right: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
