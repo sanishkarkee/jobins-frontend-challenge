@@ -215,3 +215,46 @@ $blue: #0f60ff;
     }
   }
 }
+
+@media all and (max-width: 991px) {
+  .table-section {
+    table {
+      thead {
+        tr {
+          th {
+            font-size: 11px;
+            padding: 10px 12px;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            font-size: 11px;
+            padding: 10px 12px;
+          }
+        }
+      }
+    }
+
+    .table-operation {
+      padding: 10px 12px;
+
+      .showing-block {
+        select {
+          padding: 4px;
+          font-size: 11px;
+        }
+      }
+
+      .pagination {
+        .page-item {
+          .page-link {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

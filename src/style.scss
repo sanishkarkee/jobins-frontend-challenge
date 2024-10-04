@@ -309,3 +309,54 @@ select {
     }
   }
 }
+
+@media all and (max-width: 991px) {
+  .dashboard-section {
+    .inner {
+      padding: 9px 12px;
+
+      .filter-container {
+        .filter-items-section {
+          .filter-item-wrapper {
+            .filter-item {
+              .subfilter-item {
+                select {
+                  font-size: 11px;
+                  padding: 7px;
+                }
+              }
+
+              &:nth-of-type(1) {
+                .subfilter-item-wrapper {
+                  .subfilter-item {
+                    &:nth-of-type(2) {
+                      .group {
+                        .input {
+                          font-size: 11px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &:nth-of-type(2) {
+                select {
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .header-container,
+      .sales-costs-container,
+      .shipping-container,
+      .filter-container,
+      .data-table-container {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

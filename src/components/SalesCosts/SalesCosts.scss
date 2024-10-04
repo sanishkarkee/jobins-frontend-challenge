@@ -381,3 +381,64 @@ h6 {
     }
   }
 }
+
+@media all and (max-width: 991px) {
+  .sales-costs-section {
+    .sales-costs-wrapper {
+      flex-wrap: wrap;
+
+      .total-sales-costs-block {
+        width: 50%;
+
+        .inner {
+          .sales-wrapper {
+            .sales-img {
+              img {
+                width: 55px;
+              }
+            }
+
+            .sales-info {
+              .price {
+                h3 {
+                  font-size: 21px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .total-profit-block {
+        width: 40%;
+        .inner {
+          .total-profit-title {
+            .profit-logo {
+              img {
+                width: 30px;
+                aspect-ratio: 1 / 1;
+              }
+            }
+          }
+
+          .profit-amount {
+            padding-top: 20px;
+            h3 {
+              font-size: 21px;
+              padding-bottom: 4px;
+            }
+          }
+        }
+      }
+
+      .progress-percentage-block {
+        width: 80%;
+        margin-top: 10px;
+
+        .inner {
+          padding: 15px 20px;
+        }
+      }
+    }
+  }
+}
