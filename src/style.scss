@@ -311,6 +311,76 @@ select {
 }
 
 @media all and (max-width: 991px) {
+  .section-title {
+    display: none;
+  }
+
+  .main-container {
+    .main-content-wrapper {
+      flex-wrap: wrap;
+
+      .left-content-section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .jobins-logo-section {
+          margin-right: 10px;
+
+          .minimize-menu {
+            display: none;
+          }
+        }
+
+        .navbar-section {
+          .navbar {
+            display: flex;
+            align-items: center;
+
+            .main-menu-section {
+              padding-bottom: 10px;
+              padding-right: 5px;
+
+              ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                  margin-bottom: 0;
+
+                  &:not(:last-of-type) {
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+
+            .product-section {
+              padding-bottom: 10px;
+
+              ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                  margin-bottom: 0;
+
+                  &:not(:last-of-type) {
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right-content-section {
+        width: 100%;
+      }
+    }
+  }
+
   .dashboard-section {
     .inner {
       padding: 9px 12px;
