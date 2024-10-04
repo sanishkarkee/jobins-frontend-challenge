@@ -258,3 +258,23 @@ $blue: #0f60ff;
     }
   }
 }
+
+@media all and (max-width: 767px) {
+  .table-section {
+    overflow-x: scroll;
+
+    .table-operation {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .pagination {
+        padding-top: 10px;
+      }
+
+      .showing-block,
+      .pagination {
+        width: 60%;
+      }
+    }
+  }
+}

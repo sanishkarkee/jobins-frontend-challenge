@@ -369,3 +369,66 @@ h6 {
     }
   }
 }
+
+@media all and (max-width: 767px) {
+  .shipping-info-section {
+    .shipping-inner {
+      padding: 15px 15px 0px;
+
+      .shipping-info-block {
+        .info-content-wrapper {
+          .info-content-item {
+            &:nth-of-type(1) {
+              width: 35%;
+              display: flex;
+              flex-direction: column;
+            }
+
+            &:nth-of-type(2) {
+              padding: 0px 10px 10px 10px;
+
+              .info-details {
+                .info-details-content {
+                  p {
+                    &:nth-of-type(1) {
+                      width: 90px;
+                    }
+                  }
+                }
+              }
+            }
+
+            &:nth-of-type(3) {
+              flex-wrap: wrap;
+
+              .shipping-title {
+                width: 100%;
+              }
+
+              .total-order-wrapper {
+                width: 100%;
+                display: flex;
+                padding-bottom: 10px;
+                justify-content: space-between;
+
+                .order-item {
+                  display: flex;
+                  align-items: center;
+
+                  h4 {
+                    padding-right: 5px;
+                    padding-bottom: 0;
+                  }
+
+                  &:nth-of-type(2) {
+                    padding-inline: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -442,3 +442,44 @@ h6 {
     }
   }
 }
+
+@media all and (max-width: 767px) {
+  .sales-costs-section {
+    .sales-costs-wrapper {
+      .total-sales-costs-block {
+        width: 100%;
+      }
+
+      .total-profit-block {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .progress-percentage-block {
+        width: 100%;
+
+        .inner {
+          padding: 10px;
+
+          .country-progress-wrapper {
+            .country-item {
+              .country-name {
+                min-width: 74px;
+              }
+
+              .country-img {
+                img {
+                  width: 25px;
+                }
+              }
+
+              .inc-dec {
+                min-width: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

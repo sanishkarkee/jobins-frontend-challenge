@@ -205,13 +205,29 @@ $content-back: #f5f5f5;
           padding: 8px 9px;
 
           a {
-            svg {
-              display: none;
-            }
-
             span {
               font-size: 12px;
               padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .navbar-section {
+    .navbar {
+      ul {
+        li {
+          a {
+            svg {
+              font-size: 18px;
+            }
+
+            span {
+              display: none;
             }
           }
         }
