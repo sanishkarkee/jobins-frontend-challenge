@@ -205,3 +205,80 @@ h6 {
     }
   }
 }
+
+@media all and (max-width: 1199px) {
+  .shipping-info-section {
+    .shipping-inner {
+      padding: 15px 25px 0px;
+
+      .shipping-info-block {
+        .info-content-wrapper {
+          .info-content-item {
+            &:nth-of-type(1) {
+              .user-img {
+                img {
+                  width: 65px;
+                  aspect-ratio: 1/1;
+                }
+              }
+
+              .user-details {
+                p {
+                  font-size: 12px;
+                }
+              }
+            }
+
+            &:nth-of-type(2) {
+              padding: 0px 20px 20px 20px;
+
+              .info-details {
+                .info-details-content {
+                  p {
+                    &:nth-of-type(1) {
+                      width: 100px;
+                    }
+                  }
+                }
+              }
+            }
+
+            &:nth-of-type(3) {
+              padding: 0px 20px 20px 20px;
+              .shipping-title {
+                padding-bottom: 12px;
+
+                p {
+                  margin-bottom: 8px;
+                }
+              }
+
+              .total-order-wrapper {
+                .order-item {
+                  h4 {
+                    font-size: 20px;
+                  }
+
+                  &:nth-of-type(2) {
+                    padding-inline: 40px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .nav-tabs-block {
+        .nav-tabs-block-wrapper {
+          .nav-tabs-block-item {
+            p {
+              padding: 8px 16px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

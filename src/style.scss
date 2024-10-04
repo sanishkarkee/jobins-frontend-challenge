@@ -269,6 +269,43 @@ select {
   .dashboard-section {
     .inner {
       padding: 10px 20px;
+
+      .filter-container {
+        .filter-items-section {
+          .filter-item-wrapper {
+            .filter-item {
+              .subfilter-item {
+                select {
+                  font-size: 12px;
+                  padding: 8px 10px;
+                }
+              }
+
+              &:nth-of-type(1) {
+                .subfilter-item-wrapper {
+                  .subfilter-item {
+                    &:nth-of-type(2) {
+                      .group {
+                        .input {
+                          padding: 8px 10px;
+                          font-size: 12px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &:nth-of-type(2) {
+                select {
+                  font-size: 12px;
+                  padding: 8px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
